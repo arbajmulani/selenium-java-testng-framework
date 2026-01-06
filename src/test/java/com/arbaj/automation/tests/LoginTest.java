@@ -23,7 +23,8 @@ public class LoginTest extends BaseTest{
                 "Home page title does not match!");
     }
 	
-	//Excel
+	//Excel Testcase
+	
 	@Test(dataProvider = "loginData", dataProviderClass = ExcelDataProvider.class)
 	public void loginTestWithExcel(LoginData data) 
 	{
@@ -35,7 +36,8 @@ public class LoginTest extends BaseTest{
 	}
 	
 	
-    // Json
+    // Json Testcase
+	
 	@Test(dataProvider = "loginJsonData",dataProviderClass = JsonDataProvider.class)
 	public void loginTestWithJson(LoginData loginData) 
 	{
